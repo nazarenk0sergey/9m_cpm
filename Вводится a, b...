@@ -1,0 +1,19 @@
+a = int(input())
+b = int(input())
+delit = 1
+kol = 0
+while a<=b:
+    delit = 1
+    kol = 0
+    while delit<=a:
+        if a%delit==0:
+            kol = kol+1
+        delit = delit+1
+    if kol == 4:
+        delitel = a
+        while delitel>0:
+            if a%delitel==0:
+                print(delitel)
+            delitel = delitel-1
+        print(a)
+    a = a+1
