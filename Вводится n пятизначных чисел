@@ -1,0 +1,11 @@
+n=int(input())
+k=1
+while k<=n:
+    number=int(input())
+    if number//10000%2==0:
+        if number//1000%2==1 and number//100%2==0 and number//10%2==1 and number%2==0:
+            print(number)
+    else:
+        if number//1000%2==0 and number//100%2==1 and number//10%2==0 and number%2==1:
+            print(number)
+    k = k+1
