@@ -1,0 +1,8 @@
+kolvo_chisel=int(input("Введите кол-во чисел"))
+a=[]
+print("Вводите числа")
+for x in range(0,kolvo_chisel):
+    chislo = int(input())
+    a.append(bin(chislo)[2:])
+maximum = max(a, key=len)
+print(int(maximum, 2))
