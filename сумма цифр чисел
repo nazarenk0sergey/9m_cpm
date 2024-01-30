@@ -1,0 +1,11 @@
+n = int(input())
+kolvo = 1
+while kolvo <= n:
+  summa = 0
+  x = int(input())
+  while x > 0:
+    y = x % 10
+    summa = summa+y
+    x = x // 10
+  kolvo = kolvo+1
+  print("Сумма цифр числа", x "-", summa)
