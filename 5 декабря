@@ -1,0 +1,21 @@
+def bubblesort(arr):
+    n = len(arr)
+    for i in range(n-1):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+chisla = []
+while True:
+    try:
+        chislo = int(input("Введите натуральное число (для завершения введите '0'): "))
+        if chislo == 0:
+            break
+        elif chislo < 0:
+            print("Вводите натуральные числа!")
+        else:
+            chisla.append(chislo)
+    except ValueError:
+        print("Вводите натуральные числа!")
+sortedchisla = bubblesort(chisla)
+print("Отсортированный список:", sortedchisla)
