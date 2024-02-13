@@ -1,0 +1,10 @@
+def rem():
+    list = []
+    i=int(input("Количество элементов в списке - "))
+    print("Вводите элементы через enter.")
+    for z in range(0,i):
+        x=int(input())
+        list.append(x)
+    deletter=int(input("Удаляемый элемент"))
+    return [z for z in list if z != deletter]
+print(rem())
