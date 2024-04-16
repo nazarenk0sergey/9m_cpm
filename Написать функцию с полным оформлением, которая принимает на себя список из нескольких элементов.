@@ -1,0 +1,12 @@
+def sort_list_by_length(input_list):
+    """
+    Эта функция принимает на вход список из нескольких элементов.
+    Он возвращает список, содержащий все строки из исходного списка,
+    отсортированы по длине строк в порядке возрастания.
+
+    :param input_list: list - the initial list of elements
+    :return: sorted_list: list - the list of strings, sorted by length
+    """
+    sorted_list = sorted(input_list, key=len)
+
+    return sorted_list
